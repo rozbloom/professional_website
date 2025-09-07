@@ -19,27 +19,33 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Software Development Engineer</b> at
-        <a href="https://www.aboutamazon.com/"> Amazon</a>, working in the AWS
-        sector under team Route 53. At the same time, I am undertaking a
-        part-time <b> Master's of Science</b> in <b>Software Engineering </b>at{" "}
-        <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
+        I am currently a <b>4<sup>th</sup> year Software Engineering student at BahiDar University </b>
+        <a href="https://www.bdu.edu.et"> BahirDar University</a>,haing a CGPA of 3.7 out of 4.0.
+        I am also working as a <b>backend developer</b> at tanamed technology solutions 
+        under the website development team. At the same time, I am undertaking a
+        part-time <b> Business managment </b> bachelor of science <b>degree </b>at{" "}
+        <a href="https://www.alphauc.edu.et">Alpha university college</a>.
       </p>
     );
     const two = (
       <p>
         Outside of work, I'm interested in following the developments of
-        science. I also play a lot of video games. And make TikToks.
+        science, I'm interested in exploring newly released technologies
+         and experimenting with them. I also really enjoy spending time 
+         with family and social gatherings.
+          I like to engage 
+        in brainstorming questions and intellectual discussions.
+  
       </p>
     );
 
     const tech_stack = [
-      "Typescript",
+    
       "Python",
-      "React.js",
+      "django",
       "Java",
-      "Javascript ES6+",
-      "C#"
+      "Javascript ",
+      "C++"
     ];
 
     return (
@@ -64,7 +70,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img alt="Gazi Jarin" src={"/assets/me2.jpg"} />
+              <img alt="Roza Getachew" src={"/assets/me2.jpg"} />
             </div>
           </div>
         </FadeInSection>
