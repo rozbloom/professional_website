@@ -22,11 +22,11 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-      "No Man's Land": {
-        title: "no man's land",
+      "Dental clinic ": {
+        title: "Dental Clinic Management System",
         desc:
-          "A third-person survival-mode game where you battle against time and space to return to Earth.",
-        techStack: "C# (UNITY)",
+          "A full-stack web application to manage day-to-day activities of a dental clinic, including patient management, appointment scheduling, and treatment tracking. ",
+        techStack: "Django, react ",
         link: "https://github.com/slakh96/no-mans-land",
         open: "https://gazijarin.itch.io/no-mans-land",
         image: "/assets/nomansland.png"

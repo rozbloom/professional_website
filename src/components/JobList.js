@@ -82,15 +82,15 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    Amazon: {
-      jobTitle: "Software Development Engineer @",
-      duration: "JUL 2022 - PRESENT",
+    Tanamed: {
+      jobTitle: "Software Backend Development Engineer @",
+      duration: "MARCH 2025 - PRESENT",
       desc: [
-        "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service).  This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-        "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers."
+        "working on building websites for medical institituions to help them manage their day-to-day activitys . ",
+        "built a denatl clinic websites, that uses rolebased authentication and authorization to provide privacy for patients and doctors with my team , using django and react ."
       ]
     },
-    Wattpad: {
+    /*Wattpad: {
       jobTitle: "Associate Engineer @",
       duration: "MAY 2020 - APR 2021",
       desc: [
@@ -98,8 +98,8 @@ const JobList = () => {
         "Iteratively built web experiences for 80 million users across high-traffic pages.",
         "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
       ]
-    },
-    "University of Toronto": {
+    },*/
+   /* "University of Toronto": {
       jobTitle: "Research Engineer @",
       duration: "MAY 2021 - SEPT 2021",
       desc: [
@@ -122,15 +122,15 @@ const JobList = () => {
     //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
     //   ]
     // },
-    "Orange Gate": {
-      jobTitle: "Software Developer Intern @",
+    //"Orange Gate": {
+    //  jobTitle: "Software Developer Intern @",
       duration: "MAY 2019 - AUG 2019",
       desc: [
         "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
         "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
         "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
       ]
-    }
+    }*/
   };
 
   const handleChange = (event, newValue) => {

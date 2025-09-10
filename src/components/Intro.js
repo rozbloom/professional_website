@@ -34,14 +34,14 @@ class Intro extends React.Component {
           </span>
         </Typist>
         <FadeInSection>
-          <div className="intro-subtitle">I create stuff sometimes.</div>
+          <div className="intro-subtitle">I am here to solve problems .</div>
           <div className="intro-desc">
-            I'm a software engineer from Toronto, Canada. I'm fascinated by
-            large-scale, high-impact products and contributed to major feature launches in
-            industry-leading services as well as apps that have 100M+ installs.
-          </div>
+            I'm a software engineer from BahirDar, Ethiopia. I'm fascinated by big ideas and 
+            large-scale, high-impact projects and love to contribute to major features . I have 
+            experience in building products from scratch and working on existiong ones .
+           </div>
           <a
-            href="mailto:gazijarin@gmail.com"
+            href="mailto:getachewroza2@gmail.com"
             className="intro-contact"
           >
             <EmailRoundedIcon></EmailRoundedIcon>
