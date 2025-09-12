@@ -87,7 +87,7 @@ const JobList = () => {
       duration: "MARCH 2025 - PRESENT",
       desc: [
         "working on building websites for medical institituions to help them manage their day-to-day activitys . ",
-        "built a denatl clinic websites, that uses rolebased authentication and authorization to provide privacy for patients and doctors with my team , using django and react ."
+        "built a denatl clinic websites, that uses rolebased authentication and authorization to provide privacy for patients and doctors with my team ."
       ]
     },
     /*Wattpad: {

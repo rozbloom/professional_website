@@ -26,12 +26,12 @@ class Projects extends React.Component {
         title: "Dental Clinic Management System",
         desc:
           "A full-stack web application to manage day-to-day activities of a dental clinic, including patient management, appointment scheduling, and treatment tracking. ",
-        techStack: "Django, react ",
-        link: "https://github.com/slakh96/no-mans-land",
-        open: "https://gazijarin.itch.io/no-mans-land",
-        image: "/assets/nomansland.png"
+        techStack: "Js , react ",
+        link: "https://github.com/TG-16/denital_patient_managment.git",
+        open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
+        image: "/assets/dental_thumbnail.png"
       },
-      Truth: {
+     /* Truth: {
         title: "truth",
         desc:
           "A three.js simulation of the planet system revolving around a monolith.",
@@ -101,7 +101,7 @@ class Projects extends React.Component {
         techStack: "Python",
         link: "https://github.com/gazijarin/stonehenge",
         open: ""
-      }
+      }*/
     };
 
     return (
