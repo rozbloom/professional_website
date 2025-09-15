@@ -86,8 +86,8 @@ const JobList = () => {
       jobTitle: "Software Backend Development Engineer @",
       duration: "MARCH 2025 - PRESENT",
       desc: [
-        "working on building websites for medical institituions to help them manage their day-to-day activitys . ",
-        "built a denatl clinic websites, that uses rolebased authentication and authorization to provide privacy for patients and doctors with my team ."
+        "working on building websites for medical institutions to help them manage their day-to-day activities. ",
+        "built a dental clinic website that uses role-based authentication and authorization to provide privacy for patients and doctors with my team."
       ]
     },
     /*Wattpad: {
