@@ -31,7 +31,7 @@ class Projects extends React.Component {
         open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
         image: "/assets/dental_thumbnail.png"
       },
-     /* Truth: {
+      Truth: {
         title: "truth",
         desc:
           "A three.js simulation of the planet system revolving around a monolith.",
@@ -101,7 +101,7 @@ class Projects extends React.Component {
         techStack: "Python",
         link: "https://github.com/gazijarin/stonehenge",
         open: ""
-      }*/
+      }
     };
 
     return (
