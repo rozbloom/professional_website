@@ -29,7 +29,7 @@ class Projects extends React.Component {
         techStack: "Js , react ",
         link: "https://github.com/TG-16/denital_patient_managment.git",
         open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
-        image: "/assets/dental_thumbnail.png"
+        image: "/assets/dental_thumbnail.pdf"
       },
       Truth: {
         title: "truth",
