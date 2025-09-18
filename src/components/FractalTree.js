@@ -11,36 +11,50 @@ const Sketch = p5 => {
 
   p5.draw = () => {
     p5.clear();
-    p5.translate(200, 200); // Center of canvas
+    p5.background(20, 20, 40, 100);
+    p5.translate(200, 200);
 
-    let petals = 20;
-    let baseRadius = 100;
-    let pulse = 20 * p5.sin(p5.frameCount * 0.05); // Animation for petal size
-    let rotation = p5.frameCount * 0.01; // Animation for rotation
+    // Define layers
+    const layers = [4, 6, 3]; // input, hidden, output
+    const layerSpacing = 120;
+    const nodeRadius = 18;
+    let positions = [];
 
-    for (let i = 0; i < petals; i++) {
-      let angle = p5.TWO_PI * i / petals + rotation;
-      let x = (baseRadius + pulse) * p5.cos(angle);
-      let y = (baseRadius + pulse) * p5.sin(angle);
-
-      p5.push();
-      p5.rotate(angle);
-      p5.fill(255, 0, 100, 180); // Rose color
-      p5.noStroke();
-      p5.ellipse(x, y, 60 + pulse, 30 + pulse / 2); // Animated petal
-      p5.pop();
+    // Calculate node positions
+    for (let l = 0; l < layers.length; l++) {
+      let layer = [];
+      let y = (l - 1) * layerSpacing;
+      for (let n = 0; n < layers[l]; n++) {
+        let angle = p5.PI + (p5.PI * n) / (layers[l] - 1);
+        let x = 120 * p5.cos(angle);
+        layer.push({ x, y });
+      }
+      positions.push(layer);
     }
 
-    // Animated center
-    let centerPulse = 10 * p5.sin(p5.frameCount * 0.1);
-    p5.fill(255, 200, 200, 220);
-    p5.ellipse(0, 0, 50 + centerPulse, 50 + centerPulse);
+    // Draw connections
+    p5.stroke(100, 200, 255, 120);
+    p5.strokeWeight(2);
+    for (let l = 0; l < positions.length - 1; l++) {
+      for (let a of positions[l]) {
+        for (let b of positions[l + 1]) {
+          let pulse = 0.5 + 0.5 * p5.sin(p5.frameCount * 0.05 + a.x + b.x);
+          p5.stroke(100, 200, 255, 120 * pulse);
+          p5.line(a.x, a.y, b.x, b.y);
+        }
+      }
+    }
 
-    // Extra: draw a glowing aura
-    p5.noFill();
-    p5.stroke(255, 0, 100, 80);
-    p5.strokeWeight(4);
-    p5.ellipse(0, 0, 180 + pulse, 180 + pulse);
+    // Draw nodes
+    for (let l = 0; l < positions.length; l++) {
+      for (let i = 0; i < positions[l].length; i++) {
+        let { x, y } = positions[l][i];
+        let pulse = 1 + 0.3 * p5.sin(p5.frameCount * 0.1 + x + y);
+        p5.noStroke();
+        p5.fill(100 + l * 50, 200, 255, 200);
+        p5.ellipse(x, y, nodeRadius * pulse, nodeRadius * pulse);
+      }
+    }
   };
 };
 
