@@ -7,37 +7,37 @@ let angle;
 const Sketch = p5 => {
   p5.setup = () => {
     p5.createCanvas(400, 400, "transparent");
-    angle = p5.PI / 4;
-    p5.stroke(255);
+    p5.noLoop();
   };
 
   p5.draw = () => {
     p5.clear();
-    p5.translate(200, p5.height);
-    angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16); // vary the angle using sin()
-    branch(100);
-  };
-
-  function branch(len) {
-    p5.line(0, 0, 0, -len);
-    p5.translate(0, -len);
-    if (len > 4) {
+    p5.translate(200, 200); // Center of canvas
+    let petals = 20;
+    let radius = 100;
+    for (let i = 0; i < petals; i++) {
+      let angle = p5.TWO_PI * i / petals;
+      let x = radius * p5.cos(angle);
+      let y = radius * p5.sin(angle);
       p5.push();
       p5.rotate(angle);
-      branch(len * 0.67);
-      p5.pop();
-      p5.push();
-      p5.rotate(-angle);
-      branch(len * 0.67);
+      p5.fill(255, 0, 100, 150); // Rose color with transparency
+      p5.noStroke();
+      p5.ellipse(x, y, 60, 30); // Petal shape
       p5.pop();
     }
-  }
+    // Draw center
+    p5.fill(255, 200, 200, 200);
+    p5.ellipse(0, 0, 50, 50);
+  };
 };
 
-const FractalTree = () => (
-  <div id="fractal-tree">
-    <ReactP5Wrapper sketch={Sketch} />
-  </div>
-);
+function FractalTree() {
+  return (
+    <div id="fractal-tree">
+      <ReactP5Wrapper sketch={Sketch} />
+    </div>
+  );
+}
 
 export default FractalTree;

@@ -20,7 +20,7 @@ class About extends React.Component {
     const one = (
       <p>
         I am currently a <b>4<sup>th</sup> year Software Engineering student at BahiDar University </b>
-        <a href="https://www.bdu.edu.et"> BahirDar University</a>,haing a CGPA of 3.7 out of 4.0.
+        <a href="https://www.bdu.edu.et"> BahirDar University</a>.
         I am also working as a <b>backend developer</b> at tanamed technology solutions 
         under the website development team. At the same time, I am undertaking a
         part-time <b> Business managment </b> bachelor of science <b>degree </b>at{" "}
