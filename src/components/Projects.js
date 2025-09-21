@@ -22,7 +22,7 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-      "Dental clinic ": {
+      "Dental clinic": {
         title: "Dental Clinic Management System",
         desc:
           "A full-stack web application to manage day-to-day activities of a dental clinic, including patient management, appointment scheduling, and treatment tracking. ",
@@ -31,14 +31,14 @@ class Projects extends React.Component {
         open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
         image: "/assets/dental_thumbnail.pdf"
       },
-      Truth: {
-        title: "truth",
+      spaceinvaders : {
+        title: "space invader",
         desc:
-          "A three.js simulation of the planet system revolving around a monolith.",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png"
+          "Space Invaders with AI Enemies is a classic arcade-style shooter game. You control a spaceship, dodge enemy attacks, hide behind brick walls, collect power-ups, and shoot back at AI-controlled invaders. Survive as long as you can and defeat all enemies to win!",
+        techStack: "PYTHON (pygame)",
+        link: "https://github.com/rozbloom/my_first_game_project",
+        open: "https://rozbloom.github.io/my_first_game_project/",
+        image: "/assets/spaceinvaderslogo.png"
       },
       "Tall Tales": {
         title: "tall tales",
