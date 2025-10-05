@@ -37,7 +37,7 @@ class Projects extends React.Component {
           "Space Invaders with AI Enemies is a classic arcade-style shooter game. You control a spaceship, dodge enemy attacks, hide behind brick walls, collect power-ups, and shoot back at AI-controlled invaders. Survive as long as you can and defeat all enemies to win!",
         techStack: "PYTHON (pygame)",
         link: "https://github.com/rozbloom/my_first_game_project",
-        open: "https://rozbloom.github.io/my_first_game_project/",
+        open: "https://replit.com/@getachewroza2/my_first_game_project",
         image: "/assets/spaceinvaderslogo.png"
       },
       "Tall Tales": {

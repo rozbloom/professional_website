@@ -19,22 +19,20 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>4<sup>th</sup> year Software Engineering student at BahiDar University </b>
-        <a href="https://www.bdu.edu.et"> BahirDar University</a>.
-        I am also working as a <b>backend developer</b> at tanamed technology solutions 
+        I am currently a <b>4<sup>th</sup> year Computer Software Engineering student at  </b>
+        <a href="https://www.bdu.edu.et"> Bahir Dar University</a>.
+        I am currently working as a <b>backend developer</b> at tanamed technology solutions 
         under the website development team. At the same time, I am undertaking a
-        part-time <b> Business managment </b> bachelor of science <b>degree </b>at{" "}
+        part-time <b> Business managment </b> bachelor of arts <b>degree </b>at{" "}
         <a href="https://www.alphauc.edu.et">Alpha university college</a>.
       </p>
     );
     const two = (
       <p>
         Outside of work, I'm interested in following the developments of
-        science, I'm interested in exploring newly released technologies
-         and experimenting with them. I also really enjoy spending time 
-         with family and social gatherings.
-          I like to engage 
-        in brainstorming questions and intellectual discussions.
+        science, exploring newly released technologies and experimenting with it.
+        I also really enjoy spending time with family and social gatherings.
+        I like to engage in brainstorming questions and intellectual discussions.
   
       </p>
     );
@@ -70,7 +68,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img alt="Roza Getachew" src={"/assets/myself.jpg"} />
+              <img alt="Roza Getachew" src={"/assets/profileimage_of_me.jpg"} />
             </div>
           </div>
         </FadeInSection>
