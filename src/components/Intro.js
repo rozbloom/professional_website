@@ -35,6 +35,7 @@ class Intro extends React.Component {
         </Typist>
         <FadeInSection>
           <div className="intro-subtitle"> welcome to my corner of the web.</div>
+          <div> </div>
           <div className="intro-subtitle"> where creativity meets Engineering  </div>
           <div className="intro-desc">
             I'm a software engineer from BahirDar, Ethiopia. I'm fascinated by big ideas and 

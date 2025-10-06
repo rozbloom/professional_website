@@ -6,6 +6,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import FadeInSection from "./FadeInSection";
+import { HelpRounded } from "@material-ui/icons";
 
 const isHorizontal = window.innerWidth < 600;
 
@@ -86,52 +87,31 @@ const JobList = () => {
       jobTitle: "Software Backend Development Engineer @",
       duration: "MARCH 2025 - PRESENT",
       desc: [
-        "working on building websites for medical institutions to help them manage their day-to-day activities. ",
-        "built a dental clinic website that uses role-based authentication and authorization to provide privacy for patients and doctors with my team."
+        "Spearheaded the development of dynamic web platforms for medical institutions using the Python Django framework to digitize and manage day-to-day administrative activities, significantly improving operational efficiency. ",
+        "Collaboratively engineered and deployed a dental clinic website featuring robust, role-based authentication and authorization to secure patient and doctor data, ensuring HIPAA-compliant privacy standards across all user interactions.",
+        "Contributed within an Agile collaborative team environment to design, build, and test full-stack web solutions, demonstrating proficiency in source control management and best practices for the entire software development lifecycle to deliver secure, high-utility applications."
       ]
     },
-    /*Wattpad: {
-      jobTitle: "Associate Engineer @",
-      duration: "MAY 2020 - APR 2021",
+    SOS_HERMANN_GMEINER: {
+      jobTitle: "Scouts Club Secretary @",
+      duration: "SEPT 2021 - JUL 2022",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
-      ]
-    },*/
-   /* "University of Toronto": {
-      jobTitle: "Research Engineer @",
-      duration: "MAY 2021 - SEPT 2021",
-      desc: [
-        "Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik."
+        "Managed and streamlined all administrative operations for the school's Scouts Club, directly supporting a team of 10 senior leaders and coordinating activities for 100+ members (the massive scale of the club).",
+        "Developed and maintained critical documentation (e.g., meeting minutes, activity calendars, member records) to ensure seamless communication and successful execution of 8-10 major annual events impacting the entire school community (the iteratively built web experiences).",
+        "Collaborated cross-functionally with the school administration, faculty advisors, and junior members, strictly following governance protocols (the full software development life cycle) for planning, resource allocation, and reporting to uphold national scouting standards."
       ]
     },
-    Centivizer: {
-      jobTitle: "Software Developer @",
-      duration: "SEPT 2019 - APR 2020",
+    "Bahir Dar University": {
+      jobTitle: "innovator Engineer @",
+      duration: "SEPT 2024 - NOV 2024",
       desc: [
-        "Developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-        "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
+        "Designed and implemented a full-stack, two-sided skill exchange platform leveraging a microservices architecture to facilitate peer-to-peer learning and community growth.",
+        " Developed a user-centric resource matching engine for career orientation and student support, utilizing database schemas and algorithm design to connect users with relevant learning paths and mentorship opportunities.",
+        "Engineered and deployed community-fostering features (e.g., reputation systems and skill verification badges) to enhance user engagement and trust in the platform's educational exchange, resulting in a measurable increase in active users."
       ]
     },
-    // TDSB: {
-    //   jobTitle: "Software Engineer @",
-    //   duration: "SEPT 2019 - DEC 2020",
-    //   desc: [
-    //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
-    //   ]
-    // },
-    //"Orange Gate": {
-    //  jobTitle: "Software Developer Intern @",
-      duration: "MAY 2019 - AUG 2019",
-      desc: [
-        "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
-        "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-        "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
-      ]
-    }*/
-  };
+    
+};
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
