@@ -29,7 +29,7 @@ class Projects extends React.Component {
         techStack: "Js , react ",
         link: "https://github.com/TG-16/denital_patient_managment.git",
         open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
-        image: "/assets/dental_thumbnail.pdf"
+        image: "/assets/dental_thumbnail.png"
       },
       spaceinvaders : {
         title: "space invader",
@@ -38,7 +38,7 @@ class Projects extends React.Component {
         techStack: "PYTHON (pygame)",
         link: "https://github.com/rozbloom/my_first_game_project",
         open: "https://replit.com/@getachewroza2/space_invaders",
-        image: "/assets/spaceinvaderslogo.png"
+        image: "/assets/space_invaders_wallpaper.png"
       },
       "Tall Tales": {
         title: "tall tales",
