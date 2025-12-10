@@ -54,18 +54,18 @@ class About extends React.Component {
           </div>
           <div className="about-content">
             <div className="about-description">
-              {[one]}
+              {one}
               {"Here are some technologies I have been working with:"}
               <ul className="tech-stack">
                 {tech_stack.map(function (tech_item, i) {
                   return (
-                    <FadeInSection delay={`${i + 1}00ms`}>
+                    <FadeInSection key={i} delay={`${i + 1}00ms`}>
                       <li>{tech_item}</li>
                     </FadeInSection>
                   );
                 })}
               </ul>
-              {[two]}
+              {two}
             </div>
             <div className="about-image">
               <img alt="Roza Getachew" src={"/assets/profileimage_of_me.jpg"} />

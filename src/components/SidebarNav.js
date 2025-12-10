@@ -47,7 +47,7 @@ class SidebarNav extends React.Component {
             <Sidenav.Body>
               <div className="sidebar-links">
                 {links.map((link, i) => (
-                  <FadeInSection delay={`${i + 1}00ms`}>
+                  <FadeInSection key={i} delay={`${i + 1}00ms`}>
                     <div>{link}</div>
                   </FadeInSection>
                 ))}

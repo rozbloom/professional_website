@@ -26,7 +26,7 @@ class Projects extends React.Component {
         title: "Dental Clinic Management System",
         desc:
           "A full-stack web application to manage day-to-day activities of a dental clinic, including patient management, appointment scheduling, and treatment tracking. ",
-        techStack: "Js , react ",
+        techStack: "Python(Django) , react ",
         link: "https://github.com/TG-16/denital_patient_managment.git",
         open: "https://drive.google.com/file/d/1St_r_l1EulmXf9Nnm0ck7vGe_BiOdcid/view?usp=drive_link",
         image: "/assets/dental_thumbnail.png"
@@ -34,20 +34,20 @@ class Projects extends React.Component {
       spaceinvaders : {
         title: "space invader",
         desc:
-          "Space Invaders with AI Enemies is a classic arcade-style shooter game. You control a spaceship, dodge enemy attacks, hide behind brick walls, collect power-ups, and shoot back at AI-controlled invaders. Survive as long as you can and defeat all enemies to win!",
+          "Space Invaders with AI Enemies is a classic arcade-style shooter game. You control a spaceship, dodge enemy attacks, hide behind brick walls, collect power-ups.",
         techStack: "PYTHON (pygame)",
         link: "https://github.com/rozbloom/my_first_game_project",
         open: "https://replit.com/@getachewroza2/space_invaders",
-        image: "/assets/space_invaders_wallpaper.png"
+        image: "/assets/space_invaders_wallpaper_edited00.png"
       },
-      "Tall Tales": {
-        title: "tall tales",
+      "Legends and lies": {
+        title: "legends and lies",
         desc:
           "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
         techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png"
+        link: "https://github.com/rozbloom/legends_and_lies",
+        open: "https://legends-and-lies.onrender.com/",
+        image: "/assets/legends_and_lies_logo.png"
       },
       Portfolio: {
         title: "portfolio.js",
@@ -56,7 +56,7 @@ class Projects extends React.Component {
         techStack: "NODE.JS (EXPRESS.JS)",
         link: "https://github.com/gazijarin/Portfolio.js",
         open: "https://afternoon-ocean-92382.herokuapp.com/",
-        image: "/assets/portfolio.png"
+        image: "/assets/personal_website_demo.png"
       }
     };
     const projects = {
@@ -111,7 +111,7 @@ class Projects extends React.Component {
         </div>
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
-            <Carousel.Item>
+            <Carousel.Item key={key}>
               <img
                 className="d-block w-100"
                 src={spotlightProjects[key]["image"]}
@@ -138,7 +138,7 @@ class Projects extends React.Component {
         <div className="project-container">
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
-              <FadeInSection delay={`${i + 1}00ms`}>
+              <FadeInSection key={key} delay={`${i + 1}00ms`}>
                 <li className="projects-card">
                   <div className="card-header">
                     <div className="folder-icon">
